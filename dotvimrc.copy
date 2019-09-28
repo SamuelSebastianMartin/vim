@@ -1,0 +1,83 @@
+"To load the package manager 'pathogen'
+"which loads all packages in subfiles of ./vim/bundle
+execute pathogen#infect()
+"
+"All below here added by Sam, July 2018
+"taken from https://dougblack.io/words/a-good-vimrc.html
+"this file can be deleted to go back to how it was before
+"NOTE 2 or 3 are added in /etc/vim/vimrc
+
+
+"number of spaces in a TAB
+set tabstop=4
+
+"number of spaces a tab counts for when editing. So this value is the number
+"of spaces that is inserted when you hit <TAB> and also the number of spaces
+"that are removed when you backspace
+set softtabstop=4
+
+"<TAB> just becomes a shortcut for "insert four spaces
+set expandtab
+
+"map jk or kj onto <Esc>
+imap kj <Esc>
+imap jk <Esc>
+imap JK <Esc>
+imap KJ <Esc>
+
+"put blue bar with filename at bottom of screen
+set laststatus=2
+
+
+set nocp                    " 'compatible' with Vi is not set
+syntax enable
+filetype plugin on          " plugins are enabled
+set path+=**    "puts sub-directories on path
+set wildmenu    "Offers suggestion for name completion in file search
+
+
+"Fold text so functions are collapsed ('zR' will undo)
+set foldmethod=indent
+
+" Mark trailing white space with '.' and tabs with a triangle.
+set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+
+" Improve display of paired brackets & parenthese
+hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
+
+" make cursor 'block' in Normal, and I bar in Insert
+let &t_ti.="\<Esc>[1 q"
+let &t_SI.="\<Esc>[5 q"
+let &t_EI.="\<Esc>[1 q"
+let &t_te.="\<Esc>[0 q"
+
+
+" Settings for 'netrw' FIle explorer tree.
+" Invoke with Explore or 'Vexplore' 'Vex' 'Sex'
+" tree view on file picker.
+let g:netrw_liststyle=3 
+" Open in right split
+let g:netrw_altv=1
+" No banner
+let g:netrw_banner = 0
+" Open in previous window.
+let g:netrw_browse_split = 4
+" take up 15% of window.
+let g:netrw_winsize = 15
+"    Other stuff to make progects like NERD-tree; ie.
+"    Opening cwd in left pane on starting vim.
+"augroup ProjectDrawer
+"  autocmd!
+"  autocmd VimEnter * :Vexplore
+"augroup END
+
+"Set colorscheme to bluegrey - comment out for normal black background
+"colorscheme morning
+
+
+"highight the cursor line 
+set cursorline
+"highlight CursorLine ctermbg=grey
+highlight CursorLine ctermbg=black
+" but don't have the underline
+:hi CursorLine cterm=none
