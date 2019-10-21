@@ -10,3 +10,6 @@ inoremap ;c class Test*(TestCase):<CR><CR>def test_*(self):<CR>self.assertEqual(
 
 " Set shebang
 inoremap ;! #! /usr/bin/env python3<CR><CR><Esc>
+inoremap ;! #! /usr/bin/env python3<CR><CR><Esc>
+nnoremap ;1 i#! /usr/bin/env python3<CR><CR><Esc>
+nnoremap ;1 i#! /usr/bin/env python3<CR><CR><Esc>
