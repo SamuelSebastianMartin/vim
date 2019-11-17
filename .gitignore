@@ -2,4 +2,5 @@
 bundle/*
 autoload/*
 ftplugin/python.vim
-
+spell/
+README.md
