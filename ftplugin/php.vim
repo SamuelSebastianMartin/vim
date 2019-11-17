@@ -32,3 +32,6 @@ inoremap ;h <h1></h1><Esc>F<i
 inoremap ;p <p></p><Esc>F<i
 inoremap ;i <i></i><Esc>F<i
 inoremap ;b <b></b><Esc>F<i
+
+" Run highlighted text (cf. 4,9w !php)
+vnoremap ;r :w !php<CR>

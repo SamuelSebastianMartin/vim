@@ -8,6 +8,8 @@ set nu
 "Use Flake 8 on all python files.
 autocmd BufWritePost *.py call Flake8()
 
+"" Autotext Shortcuts
+
 "Test class auto-text shortcut with ;c
 inoremap ;c class Test*(TestCase):<CR><CR>def test_*(self):<CR>self.assertEqual()<Esc>3k0f*
 
@@ -24,3 +26,6 @@ nnoremap ;m iif __name__ == '__main__':<CR>main()<Esc>
 " Doc String
 inoremap ;d <Esc>o"""<CR>"""<Esc>O
 nnoremap ;d <Esc>o"""<CR>"""<Esc>O
+
+" Run highlighted text (cf. 4,9w !python)
+vnoremap ;r :w !python3<CR>
