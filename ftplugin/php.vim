@@ -25,7 +25,9 @@ inoremap ;{ {<CR>}<Esc>O
 
 "Opening php tag
 inoremap ;! <?php<CR><CR>
+inoremap ;1 <?php<CR><CR>
 nnoremap ;! gg0i<?php<CR><CR>
+nnoremap ;1 gg0i<?php<CR><CR>
 
 " Useful html tag mappings
 inoremap ;h <h1></h1><Esc>F<i
