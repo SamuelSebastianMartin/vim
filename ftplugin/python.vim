@@ -13,3 +13,11 @@ inoremap ;! #! /usr/bin/env python3<CR><CR><Esc>
 inoremap ;! #! /usr/bin/env python3<CR><CR><Esc>
 nnoremap ;1 i#! /usr/bin/env python3<CR><CR><Esc>
 nnoremap ;1 i#! /usr/bin/env python3<CR><CR><Esc>
+
+" if name == 'main'...
+inoremap ;m if __name__ == '__main__':<CR>main()<Esc>
+nnoremap ;m iif __name__ == '__main__':<CR>main()<Esc>
+
+" Doc String
+inoremap ;d <Esc>o"""<CR>"""<Esc>O
+nnoremap ;d <Esc>o"""<CR>"""<Esc>O
