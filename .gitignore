@@ -1,2 +1,5 @@
+.gitignore
 bundle/*
 autoload/*
+ftplugin/python.vim
+
