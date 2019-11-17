@@ -4,6 +4,11 @@
  " Show line numbers
  set nu
 
+ inoremap ;! <Esc>ggi<!DOCTYPE html><CR><html><CR><body><CR></body><CR></html><Esc>
+ inoremap ;1 <Esc>ggi<!DOCTYPE html><CR><html><CR><body><CR></body><CR></html><Esc>
+ nnoremap ;! ggi<!DOCTYPE html><CR><html><CR><body><CR></body><CR></html><Esc>
+ nnoremap ;1 ggi<!DOCTYPE html><CR><html><CR><body><CR></body><CR></html><Esc>
+
 " Useful html tag mappings
 inoremap ;h <h1></h1><Esc>F<i
 inoremap ;p <p></p><Esc>F<i
