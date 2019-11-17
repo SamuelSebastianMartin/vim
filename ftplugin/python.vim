@@ -8,10 +8,10 @@ set nu
 "Use Flake 8 on all python files.
 autocmd BufWritePost *.py call Flake8()
 
-"Test class shortcut
+"Test class auto-text shortcut with ;c
 inoremap ;c class Test*(TestCase):<CR><CR>def test_*(self):<CR>self.assertEqual()<Esc>3k0f*
 
-" Set shebang
+" Set shebang auto-text with ;!
 inoremap ;! #! /usr/bin/env python3<CR><CR><Esc>
 inoremap ;! #! /usr/bin/env python3<CR><CR><Esc>
 nnoremap ;1 i#! /usr/bin/env python3<CR><CR><Esc>
