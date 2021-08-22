@@ -1,6 +1,10 @@
 # vim
 .vim for synching
 
+Clone this directory into the home, it should appear as `.vim`.
+
+The file `dotvimrc.copy` should be copied into the home directory, as `.vimrc`. It is only here for convenience of git management.
+
 Everything below is taken from: https://gist.githubusercontent.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53/raw/72f1e99350d96fcbcb97a19447510e558509bf6c/plugins.md
 # Managing plugins in Vim: The basics
 
