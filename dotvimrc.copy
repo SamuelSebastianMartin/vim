@@ -82,3 +82,5 @@ set cursorline
 highlight CursorLine ctermbg=black
 " but don't have the underline
 :hi CursorLine cterm=none
+
+set relativenumber
