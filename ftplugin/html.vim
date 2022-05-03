@@ -1,5 +1,10 @@
- " Make indents all 2 spaces for html files
- autocmd Filetype html setlocal ts=2 sw=2 expandtab
+"on pressing tab, insert (2) spaces
+set expandtab
+"Show existing tab with 2 spaces width.
+set tabstop=2
+set softtabstop=2
+"When indenting with '>', use 2 spaces
+set shiftwidth=2
 
  " Show line numbers
  set nu
