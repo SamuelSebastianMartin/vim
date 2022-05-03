@@ -6,7 +6,7 @@ highlight ColorColumn ctermbg=DarkGrey
 set nu
 
 "Use Flake 8 on all python files.
-autocmd BufWritePost *.py call Flake8()
+"autocmd BufWritePost *.py call Flake8()
 
 "" Autotext Shortcuts
 
