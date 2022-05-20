@@ -26,6 +26,13 @@ imap jk <Esc>
 imap JK <Esc>
 imap KJ <Esc>
 
+" Avoid <C-W> when changing windows, as this closes the
+" browser window if you have the wrong window selected.
+nnoremap <C-H> <C-W>h
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-L> <C-W>l
+
 "put blue bar with filename at bottom of screen
 set laststatus=2
 
@@ -84,6 +91,8 @@ highlight CursorLine ctermbg=black
 :hi CursorLine cterm=none
 
 "set relativenumber
+
+colorscheme murphy
 
 "Stop mouseclicks working. This means one can click on a Vim
 "window without jumping to the (random) line that was clicked.
