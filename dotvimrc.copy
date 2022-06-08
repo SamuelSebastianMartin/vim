@@ -1,13 +1,10 @@
-"
-"All below here added by Sam, July 2018
-"taken from https://dougblack.io/words/a-good-vimrc.html
-"this file can be deleted to go back to how it was before
-"NOTE 2 or 3 are added in /etc/vim/vimrc
 
 "Allow different behaviour for different filetypes
 filetype on
 filetype plugin on
 filetype indent on
+
+set omnifunc=syntaxcomplete#Complete
 
 "number of spaces in a TAB
 set tabstop=4
