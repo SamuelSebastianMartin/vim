@@ -1,6 +1,8 @@
 autocmd BufRead,BufNew *.md setf markdown
 
 set spell
+set autoindent
+set relativenumber
 
 " Wrap the lines, and don't break mid-word.
 set wrap
@@ -15,3 +17,6 @@ nnoremap ;= yyp<S-V>r=o
 "single underline (Heading 2)
 inoremap ;- <Esc>yyp<S-V>r-o
 nnoremap ;- yyp<S-V>r-o
+
+"insert single table column
+nnoremap ;| i|   |
