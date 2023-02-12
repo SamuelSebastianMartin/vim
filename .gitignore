@@ -1,6 +1,2 @@
-.gitignore
-.netrwhist
-bundle/*
-autoload/*
+plugged/
 spell/
-README.md
