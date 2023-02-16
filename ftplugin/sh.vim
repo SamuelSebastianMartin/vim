@@ -1,5 +1,5 @@
 set autoindent
-set relativenumber
+set nu
 "
 "on pressing tab, insert (4) spaces
 set expandtab
