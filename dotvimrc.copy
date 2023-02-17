@@ -92,7 +92,7 @@ highlight CursorLine ctermbg=black
 
 "set relativenumber
 
-colorscheme murphy
+" colorscheme murphy
 
 "Stop mouseclicks working. This means one can click on a Vim
 "window without jumping to the (random) line that was clicked.
