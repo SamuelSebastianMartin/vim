@@ -46,11 +46,32 @@ set wildmenu    "Offers suggestion for name completion in file search
 
 "Fold text so functions are collapsed ('zR' will undo)
 set foldmethod=indent
+"set foldmethod=manual
 
 " Mark trailing white space with '.' and tabs with a triangle.
 set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
-" Improve display of paired brackets & parenthese
+" highlight searchs
+set hlsearch " `nohl` to switch off
+" highlight as typing proceeds (before hitting <C-R>
+set incsearch
+
+"Remove search highlights on refresh <C-L>
+nnoremap <C-L> :nohl<CR><C-L>
+
+" set 'Y' to yank to end of line, like 'C' & 'D'
+map Y y$
+
+"Hide all the ~ below text
+highlight NonText guifg=bg
+
+" Stop file proliferation
+set nobackup
+set noswapfile
+set nowritebackup
+
+
+" Improve display of paired brackets & parentheses
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 
 " make cursor 'block' in Normal, and I bar in Insert
@@ -72,7 +93,7 @@ let g:netrw_banner = 0
 let g:netrw_browse_split = 4
 " take up 15% of window.
 let g:netrw_winsize = 15
-"    Other stuff to make progects like NERD-tree; ie.
+"    Other stuff to make projects like NERD-tree; ie.
 "    Opening cwd in left pane on starting vim.
 "augroup ProjectDrawer
 "  autocmd!
@@ -98,3 +119,8 @@ highlight CursorLine ctermbg=black
 "window without jumping to the (random) line that was clicked.
 "Note: this does not disable other mouse commands.
 set ttymouse=
+
+" Stop bright highlights of spell check
+hi clear SpellBad
+hi SpellBad cterm=underline ctermfg=brown
+
