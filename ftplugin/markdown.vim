@@ -6,4 +6,4 @@ set wrap
 set linebreak
 
 "insert single table column
-nnoremap ;| i|   |
+"nnoremap ;| i|   |
