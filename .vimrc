@@ -119,6 +119,8 @@ highlight CursorLine ctermbg=black
 " Stop bright highlights of spell check
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=brown
+hi clear SpellCap "un-capitalised words
+hi SpellCap cterm=underline ctermfg=blue
 
 
 "----------------------- MISC ------------------------------"
